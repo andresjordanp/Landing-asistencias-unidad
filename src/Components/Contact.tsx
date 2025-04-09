@@ -5,23 +5,26 @@ const ContactSection: React.FC = () => {
   return (
     <section
       id="contacto"
-      className="relative bg-gradient-to-br from-white to-gray-50 overflow-hidden min-h-screen flex items-center"
+      className="relative bg-gradient-to-br from-white to-gray-50 overflow-visible min-h-screen flex items-center"
     >
-      {/* Círculo azul */}
+      {/* Círculo azul 
       <motion.div
         className="absolute top-[-20px] md:top-[-80px] left-[-80px] w-64 h-64 md:w-96 md:h-96 bg-[#1D1F3C] rounded-full"
         initial={{ scale: 0.9, opacity: 0.95 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
       />
+      */}
 
-      {/* Círculo naranja */}
+      {/* Círculo naranja (el que se extiende hacia about us) */}
       <motion.div
-        className="absolute bottom-[-80px] right-[-80px] w-64 h-64 md:w-96 md:h-96 bg-[#FD8412] rounded-full"
+        className="absolute top-[-180px] right-[-240px] w-78 h-78 md:w-[30rem] md:h-[30rem] bg-[#FD8412] rounded-full z-0"
         initial={{ scale: 0.9, opacity: 0.95 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
       />
+
+      
 
       {/* Contenido unificado solo en móvil */}
       <div className="relative z-10 container mx-auto px-6 w-full">

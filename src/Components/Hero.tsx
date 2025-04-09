@@ -5,23 +5,24 @@ const HeroSection: React.FC = () => {
   return (
     <section
       id="inicio"
-      className="relative bg-gradient-to-br from-white to-gray-50 overflow-hidden pt-[80px]"
+      className="relative bg-gradient-to-br from-white to-gray-50 overflow-visible pt-[80px]"
       style={{ minHeight: "100vh" }}
     >
-      {/* Círculo azul ajustado para móviles */}
+      {/* Círculo azul */}
       <motion.div
-        className="absolute top-[-20px] md:top-[-80px] left-[-80px] w-64 h-64 md:w-96 md:h-96 bg-[#1D1F3C] rounded-full"
+        className="absolute top-[-110px] md:top-[-160px] left-[-200px] w-78 h-78 md:w-[30rem] md:h-[30rem] bg-[#1D1F3C] rounded-full"
         initial={{ scale: 0.9, opacity: 0.95 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
       />
-      {/* Círculo naranja */}
+      {/* Círculo naranja 
       <motion.div
         className="absolute bottom-[-80px] right-[-80px] w-64 h-64 md:w-96 md:h-96 bg-[#FD8412] rounded-full"
         initial={{ scale: 0.9, opacity: 0.95 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
       />
+      */}
 
       {/* Contenedor para centrar el contenido verticalmente */}
       <div

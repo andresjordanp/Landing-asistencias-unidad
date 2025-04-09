@@ -5,57 +5,62 @@ const AboutUsSection: React.FC = () => {
   return (
     <section
       id="nosotros"
-      className="relative bg-gradient-to-br from-white to-gray-50 overflow-hidden min-h-screen flex items-center"
+      className="relative bg-gradient-to-br from-white to-gray-50 overflow-visible min-h-screen flex items-center"
     >
-      {/* Círculo azul ajustado para móviles */}
+      {/* Círculo azul */}
       <motion.div
-        className="absolute top-[-20px] md:top-[-80px] left-[-80px] w-64 h-64 md:w-96 md:h-96 bg-[#1D1F3C] rounded-full"
+        className="absolute top-[-20px] md:top-[-160px] left-[-240px] w-78 h-78 md:w-[30rem] md:h-[30rem] bg-[#1D1F3C] rounded-full"
         initial={{ scale: 0.9, opacity: 0.95 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
       />
-      {/* Círculo naranja */}
+
+      {/* Círculo naranja 
       <motion.div
         className="absolute bottom-[-80px] right-[-80px] w-64 h-64 md:w-96 md:h-96 bg-[#FD8412] rounded-full"
         initial={{ scale: 0.9, opacity: 0.95 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
       />
+      */}
 
-      {/* Contenido centrado */}
-      <div className="relative z-10 container mx-auto px-6 w-full">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-10 text-center md:text-left">
-          {/* Texto */}
-          <motion.div
-            className="md:w-1/2"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+      {/* Contenedor que centra el contenido (solo en móviles) */}
+      <div className="relative z-10 container mx-auto px-6 w-full h-full flex items-center justify-center">
+        <motion.div
+          className="max-w-3xl mx-auto bg-white/90 p-6 pb-16 rounded-3xl shadow-md border border-gray-200 text-justify text-black text-base leading-relaxed md:bg-transparent md:p-0 md:rounded-none md:shadow-none md:border-0 md:text-lg md:pb-0"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          <motion.h2
+            className="text-3xl md:text-4xl font-bold text-[#1D1F3C] mb-12 text-center"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1D1F3C] mb-6">
-              Sobre Nosotros
-            </h2>
-            <p className="text-gray-700 text-lg leading-relaxed">
-              En <span className="font-semibold text-[#FD8412]">Unidad Asistencias</span> trabajamos para brindar soluciones integrales cuando más las necesitas. Somos un equipo comprometido con tu bienestar, ofreciendo servicios de asistencia en el hogar, legal y durante tus viajes. Nuestra misión es darte tranquilidad en cada momento.
-            </p>
-          </motion.div>
-
-          {/* Ilustración o iconografía */}
-          <motion.div
-            className="md:w-1/2 flex justify-center"
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            <img
-              src="https://via.placeholder.com/400x300?text=Nosotros"
-              alt="Ilustración sobre nosotros"
-              className="w-full max-w-md"
-            />
-          </motion.div>
-        </div>
+            ¿Quiénes somos?
+          </motion.h2>
+          <p>
+            Unidad Asistencias es una compañía del holding{" "}
+            <strong className="text-[#FD8412]">UNIDAD</strong>, un grupo empresarial consolidado que integra a líderes en diversas áreas como{" "}
+            <strong className="text-[#FD8412]">Unidad Corredores de Seguros</strong>,{" "}
+            <strong className="text-[#FD8412]">Unidad Créditos Automotrices</strong> y{" "}
+            <strong className="text-[#FD8412]">Unidad Leasing Habitacional</strong>. Este enfoque multidisciplinario nos permite crear soluciones innovadoras y adaptadas a las necesidades de nuestros clientes, brindando un servicio integral de calidad.
+          </p>
+          <br />
+          <p>
+            En Unidad Asistencias, nos especializamos en ofrecer servicios de{" "}
+            <strong className="text-[#FD8412]">Hogar</strong>,{" "}
+            <strong className="text-[#FD8412]">Asistencia en Viajes</strong> y{" "}
+            <strong className="text-[#FD8412]">Asesoría Legal</strong>. Nuestro enfoque está orientado tanto a empresas (B2B) como a modelos de negocio híbridos (B2B2C), con la misión de proporcionar tranquilidad y respaldo a nuestros clientes en situaciones que requieren atención y cuidado especializado.
+          </p>
+          <br />
+          <p>
+            Con un equipo comprometido y altamente capacitado, trabajamos para entregar soluciones efectivas, rápidas y cercanas, con un alto grado de empatía. Entendemos que cada cliente tiene necesidades únicas, y nos esforzamos por ofrecer un servicio personalizado que se adapte a sus expectativas. En Unidad Asistencias, nos enorgullece poder contribuir a la seguridad y bienestar de nuestros clientes, ofreciéndoles el apoyo necesario en momentos clave de su vida personal o profesional.
+          </p>
+        </motion.div>
       </div>
     </section>
   );
