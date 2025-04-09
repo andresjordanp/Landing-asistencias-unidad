@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/', // 👈 nombre exacto del repositorio
+  base: '/Landing-asistencias-unidad/',
   plugins: [
     react(),
     tailwindcss(),
