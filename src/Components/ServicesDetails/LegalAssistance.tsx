@@ -1,20 +1,31 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import LegalAssistanceImage from '../../assets/LegalAssistanceImage.png';
+import LegalAssistanceImage from '../../assets/LegalAssistanceImage.webp';
 
 const LegalAssistance: React.FC = () => {
   return (
     <section className="relative bg-gradient-to-br from-white to-gray-50 overflow-hidden min-h-screen px-4 py-10">
       {/* Círculo azul animado */}
       <motion.div
-        className="absolute top-[-110px] md:top-[-160px] left-[-200px] w-78 h-78 md:w-[30rem] md:h-[30rem] bg-[#1D1F3C] rounded-full"
+          className="
+          absolute 
+          top-[-24vw] left-[-24vw] w-[60vw] h-[60vw] 
+          md:top-[-16vw] md:left-[-20vw] md:w-[32vw] md:h-[32vw] 
+          bg-[#1D1F3C] rounded-full
+        "
         initial={{ scale: 0.9, opacity: 0.95 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, ease: 'easeOut' }}
       />
       {/* Círculo naranja animado */}
       <motion.div
-        className="absolute bottom-[-100px] right-[-160px] w-78 h-78 md:w-[30rem] md:h-[30rem] bg-[#FD8412] rounded-full"
+        className="
+          absolute 
+          bottom-[-24vw] right-[-24vw] w-[60vw] h-[60vw] 
+          md:bottom-[-16vw] md:right-[-20vw] md:w-[32vw] md:h-[32vw] 
+          bg-[#FD8412] rounded-full
+        "
+
         initial={{ scale: 0.9, opacity: 0.95 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.3, ease: 'easeOut' }}

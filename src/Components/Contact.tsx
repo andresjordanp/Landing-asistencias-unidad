@@ -18,7 +18,12 @@ const ContactSection: React.FC = () => {
 
       {/* Círculo naranja (el que se extiende hacia about us) */}
       <motion.div
-        className="absolute top-[-180px] right-[-240px] w-78 h-78 md:w-[30rem] md:h-[30rem] bg-[#FD8412] rounded-full z-0"
+                  className="
+            absolute 
+            top-[-20vw] right-[-20vw] w-[50vw] h-[50vw] 
+            md:top-[-16vw] md:right-[-20vw] md:w-[32vw] md:h-[32vw] 
+            bg-[#FD8412] rounded-full z-0
+          "
         initial={{ scale: 0.9, opacity: 0.95 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
@@ -78,6 +83,7 @@ const ContactSection: React.FC = () => {
       <option value="hogar">Asistencia hogar</option>
       <option value="legal">Asistencia legal</option>
       <option value="viajes">Asistencia viajes</option>
+      <option value="otro">Otro</option>
     </select>
   </div>
 

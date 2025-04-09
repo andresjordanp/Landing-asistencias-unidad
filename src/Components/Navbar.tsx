@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { HashLink } from "react-router-hash-link";
-import logo from "../assets/Logo-Unidad-Asistencias.png";
+import logo from "../assets/Logo-Unidad-Asistencias.webp";
 import { scrollWithOffset } from "../lib/scrollWithOffset"; // ajustá si está en otra ruta
 
 const Navbar = () => {
@@ -89,7 +89,7 @@ const Navbar = () => {
             {/* Botón móvil de asistencia */}
             <HashLink
               smooth
-              to="/#trabaja"
+              to="/#contacto"
               scroll={scrollWithOffset}
               onClick={() => setIsOpen(false)}
               className="bg-[#fd8412] text-white px-5 py-2 rounded-full hover:bg-[#e57c00] transition-all"

@@ -27,12 +27,17 @@ const ServicesSection: React.FC = () => {
       */}
 
       {/* Círculo naranja (el que se extiende hacia hero) */}
-      <motion.div
-        className="absolute top-[-180px] right-[-240px] w-78 h-78 md:w-[30rem] md:h-[30rem] bg-[#FD8412] rounded-full z-0"
-        initial={{ scale: 0.9, opacity: 0.95 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
-      />
+        <motion.div
+          className="
+            absolute 
+            top-[-36vw] right-[-20vw] w-[50vw] h-[50vw] 
+            md:top-[-16vw] md:right-[-20vw] md:w-[32vw] md:h-[32vw] 
+            bg-[#FD8412] rounded-full z-0
+          "
+          initial={{ scale: 0.9, opacity: 0.95 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
+        />
 
 
       {/* Contenido */}

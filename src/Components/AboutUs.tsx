@@ -9,7 +9,13 @@ const AboutUsSection: React.FC = () => {
     >
       {/* Círculo azul */}
       <motion.div
-        className="absolute top-[-20px] md:top-[-160px] left-[-240px] w-78 h-78 md:w-[30rem] md:h-[30rem] bg-[#1D1F3C] rounded-full"
+        className="
+          absolute 
+          top-[-24vw] left-[-24vw] w-[60vw] h-[60vw] 
+          md:top-[-16vw] md:left-[-20vw] md:w-[32vw] md:h-[32vw] 
+          bg-[#1D1F3C] rounded-full
+        "
+
         initial={{ scale: 0.9, opacity: 0.95 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
@@ -46,7 +52,7 @@ const AboutUsSection: React.FC = () => {
             Unidad Asistencias es una compañía del holding{" "}
             <strong className="text-[#FD8412]">UNIDAD</strong>, un grupo empresarial consolidado que integra a líderes en diversas áreas como{" "}
             <strong className="text-[#FD8412]">Unidad Corredores de Seguros</strong>,{" "}
-            <strong className="text-[#FD8412]">Unidad Créditos Automotrices</strong> y{" "}
+            <strong className="text-[#FD8412]">Unidad Crédito Automotriz</strong> y{" "}
             <strong className="text-[#FD8412]">Unidad Leasing Habitacional</strong>. Este enfoque multidisciplinario nos permite crear soluciones innovadoras y adaptadas a las necesidades de nuestros clientes, brindando un servicio integral de calidad.
           </p>
           <br />

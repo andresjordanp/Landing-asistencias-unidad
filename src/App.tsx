@@ -15,17 +15,18 @@ import LegalAssistance from './Components/ServicesDetails/LegalAssistance';
 const MainPage: React.FC = () => (
   <div className="bg-gradient-to-br from-white to-gray-50 overflow-hidden">
     <Hero />
-    <div className="-mt-0">
+    <div className="mb-16 md:mb-0">
       <ServicesSection />
     </div>
-    <div className="-mt-0">
+    <div className="mb-16 md:mb-0">
       <AboutUsSection />
     </div>
-    <div className="-mt-0">
+    <div className="mb-16 md:mb-0">
       <ContactSection />
     </div>
   </div>
 );
+
 
 // Layout que muestra siempre el Navbar y Footer
 const Layout: React.FC = () => (
@@ -41,8 +42,9 @@ const Layout: React.FC = () => (
 
 function App() {
   // Si estás en desarrollo, el basename se establece en "/" y en producción en "/Landing-asistencias-unidad"
-  const basename = import.meta.env.DEV ? "/" : "/Landing-asistencias-unidad";
-
+  const basename = import.meta.env.MODE === 'production'
+  ? '/Landing-asistencias-unidad/'
+  : '/';
   return (
     <Router basename={basename}>
       <ScrollToTop />

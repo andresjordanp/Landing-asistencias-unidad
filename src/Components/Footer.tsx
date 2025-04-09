@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/Logo-Unidad-Asistencias.png";
+import logo from "../assets/Logo-Unidad-Asistencias.webp";
 import { Mail, Phone } from "lucide-react";
 
 const Footer: React.FC = () => {

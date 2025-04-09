@@ -10,7 +10,12 @@ const HeroSection: React.FC = () => {
     >
       {/* Círculo azul */}
       <motion.div
-        className="absolute top-[-110px] md:top-[-160px] left-[-200px] w-78 h-78 md:w-[30rem] md:h-[30rem] bg-[#1D1F3C] rounded-full"
+        className="
+          absolute 
+          top-[-24vw] left-[-24vw] w-[60vw] h-[60vw] 
+          md:top-[-16vw] md:left-[-20vw] md:w-[32vw] md:h-[32vw] 
+          bg-[#1D1F3C] rounded-full
+        "
         initial={{ scale: 0.9, opacity: 0.95 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}

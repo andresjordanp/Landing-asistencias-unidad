@@ -1,5 +1,6 @@
 export const scrollWithOffset = (el: HTMLElement) => {
-  const yOffset = -80; // ajustá según altura del navbar en mobile
+  const isMobile = window.innerWidth < 768; // Tailwind breakpoint para md
+  const yOffset = isMobile ? -150 : -100; // Ajustá los valores según tu navbar
   const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
   window.scrollTo({ top: y, behavior: 'smooth' });
 };
