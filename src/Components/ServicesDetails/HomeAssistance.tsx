@@ -7,7 +7,7 @@ const HomeAssistance: React.FC = () => {
     <section className="relative bg-gradient-to-br from-white to-gray-50 overflow-hidden min-h-screen px-4 py-10">
       {/* Círculo azul */}
       <motion.div
-                className="
+        className="
           absolute 
           top-[-24vw] left-[-24vw] w-[60vw] h-[60vw] 
           md:top-[-16vw] md:left-[-20vw] md:w-[32vw] md:h-[32vw] 
@@ -17,6 +17,7 @@ const HomeAssistance: React.FC = () => {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
       />
+
       {/* Círculo naranja animado */}
       <motion.div
         className="
@@ -25,7 +26,6 @@ const HomeAssistance: React.FC = () => {
           md:bottom-[-16vw] md:right-[-20vw] md:w-[32vw] md:h-[32vw] 
           bg-[#FD8412] rounded-full
         "
-
         initial={{ scale: 0.9, opacity: 0.95 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
@@ -34,8 +34,6 @@ const HomeAssistance: React.FC = () => {
       {/* Contenido centrado y por encima de los círculos */}
       <div className="relative z-10 container mx-auto">
         <div className="flex flex-col items-center justify-center gap-10 pt-10 pb-20 text-center">
-
-
           {/* Imagen */}
           <motion.div
             className="w-full flex justify-center"
@@ -51,7 +49,11 @@ const HomeAssistance: React.FC = () => {
           </motion.div>
 
           {/* Texto */}
-          <div className="w-full max-w-3xl bg-white/90 backdrop-blur-md rounded-3xl p-6 md:p-8 shadow-md z-10">
+          <div
+            className="w-full max-w-3xl rounded-3xl p-6 md:p-8 shadow-md z-10
+                       bg-white/90 backdrop-blur-md
+                       md:bg-transparent md:backdrop-blur-none"
+          >
             <motion.h1
               className="text-3xl font-bold text-[#1D1F3C] mb-4"
               initial={{ opacity: 0, y: -20 }}
