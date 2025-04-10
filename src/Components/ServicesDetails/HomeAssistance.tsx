@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import HomeAssistanceImage from '../../assets/HomeAssitanceimage.webp';
+import { HashLink } from 'react-router-hash-link';
 
 const HomeAssistance: React.FC = () => {
   return (
@@ -31,9 +32,10 @@ const HomeAssistance: React.FC = () => {
         transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
       />
 
-      {/* Contenido centrado y por encima de los círculos */}
+      {/* Contenido centrado */}
       <div className="relative z-10 container mx-auto">
         <div className="flex flex-col items-center justify-center gap-10 pt-10 pb-20 text-center">
+
           {/* Imagen */}
           <motion.div
             className="w-full flex justify-center"
@@ -91,6 +93,22 @@ const HomeAssistance: React.FC = () => {
                 </li>
               </ul>
             </motion.div>
+            {/* Botón: Solicitar asistencia (naranja) */}
+            <motion.div
+              className="mt-8 flex justify-center"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 1, delay: 0.6, ease: 'easeOut' }}
+            >
+            <HashLink
+              smooth
+              to="/#contacto"
+              className="bg-[#FD8412] text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-[#e57c00] transition-all"
+            >
+              Solicitar asistencia
+            </HashLink>
+            </motion.div>
+
           </div>
         </div>
       </div>

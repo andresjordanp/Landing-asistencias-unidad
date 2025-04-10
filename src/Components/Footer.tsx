@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/Logo-Unidad-Asistencias.webp";
-import { Mail, Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
@@ -26,10 +26,6 @@ const Footer: React.FC = () => {
             <div className="flex items-center gap-3">
             <Mail size={18} className="text-[#FD8412]" />
             <span>sbustamante@unidadasistencias.cl</span>
-            </div>
-            <div className="flex items-center gap-3">
-            <Phone size={18} className="text-[#FD8412]" />
-            <span>+56 9 1234 5678</span>
             </div>
             </div>
          </div>

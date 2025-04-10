@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import LegalAssistanceImage from '../../assets/LegalAssistanceImage.webp';
+import { HashLink } from 'react-router-hash-link';
 
 const LegalAssistance: React.FC = () => {
   return (
@@ -94,6 +95,22 @@ const LegalAssistance: React.FC = () => {
                 La Asistencia Legal busca brindar seguridad y tranquilidad a las personas y empresas, ayudándolas a tomar decisiones informadas y a resolver sus problemas legales de manera eficiente y efectiva.
               </p>
             </motion.div>
+            {/* Botón: Solicitar asistencia (naranja) */}
+          <motion.div
+            className="mt-8 flex justify-center"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.6, ease: 'easeOut' }}
+          >
+          <HashLink
+            smooth
+            to="/#contacto"
+            className="bg-[#FD8412] text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-[#e57c00] transition-all"
+          >
+            Solicitar asistencia
+          </HashLink>
+          </motion.div>
+
           </div>
         </div>
       </div>
