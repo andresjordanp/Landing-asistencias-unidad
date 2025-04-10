@@ -51,7 +51,7 @@ const AboutUsSection: React.FC = () => {
           <p>
             Unidad Asistencias es una compañía del holding{" "}
             <strong className="text-[#FD8412]">UNIDAD</strong>, un grupo empresarial consolidado que integra a líderes en diversas áreas como{" "}
-            <strong className="text-[#FD8412]">Unidad Corredores de Seguros</strong>,{" "}
+            <strong className="text-[#FD8412]">Unidad Corredora de Seguros</strong>,{" "}
             <strong className="text-[#FD8412]">Unidad Crédito Automotriz</strong> y{" "}
             <strong className="text-[#FD8412]">Unidad Leasing Habitacional</strong>. Este enfoque multidisciplinario nos permite crear soluciones innovadoras y adaptadas a las necesidades de nuestros clientes, brindando un servicio integral de calidad.
           </p>
