@@ -6,6 +6,6 @@ export default defineConfig(({ mode }) => ({
   base: mode === 'production' ? '/Landing-asistencias-unidad/' : '/',
   plugins: [react(), tailwindcss()],
   build: {
-    outDir: 'docs', // Para que se despliegue desde la carpeta docs
+    outDir: 'dist', // Para que se despliegue desde la carpeta docs
   },
 }));
