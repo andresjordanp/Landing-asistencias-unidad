@@ -41,12 +41,9 @@ const Layout: React.FC = () => (
 );
 
 function App() {
-  // Si estás en desarrollo, el basename se establece en "/" y en producción en "/Landing-asistencias-unidad"
-  const basename = import.meta.env.MODE === 'production'
-  ? '/Landing-asistencias-unidad/'
-  : '/';
+  
   return (
-    <Router basename={basename}>
+    <Router>
       <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
