@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col items-start text-left gap-4">
             <div className="flex items-center gap-3">
             <Mail size={18} className="text-[#FD8412]" />
-            <span>sbustamante@unidadasistencias.cl</span>
+            <span>contacto@unidadasistencias.cl</span>
             </div>
             </div>
          </div>
